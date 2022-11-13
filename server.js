@@ -6,6 +6,15 @@ const cors = require('cors')
 app.use(cors());
 app.use(express.json());
 
+mongoose.connect("mongodb://localhost:27017/shoutOut", {
+    useNewUrlParser: true
+}, (err) => {
+    if(err){
+        console.log('Unable to connect to MongoDB server');
+    }
+    else
+    console.log('Connected ...');}
+)
 
 // create server
 const PORT = 5000;
