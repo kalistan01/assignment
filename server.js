@@ -15,6 +15,9 @@ mongoose.connect("mongodb://localhost:27017/shoutOut", {
     else
     console.log('Connected ...');}
 )
+//routes
+app.use("/orders", ordersRoutes); //order Routes
+
 
 // create server
 const PORT = 5000;
