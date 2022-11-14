@@ -10,7 +10,7 @@ const ordersRoutes = require('./routes/orderRoutes')
 
 app.use(cors());
 app.use(express.json());
-
+// for swagger aoi documentation
 const options = {
     definition: {
         openapi: "3.0.0",
